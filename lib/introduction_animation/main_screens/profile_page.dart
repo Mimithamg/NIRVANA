@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:social_media/introduction_animation/main_screens/discussions.dart';
+import 'package:social_media/introduction_animation/main_screens/more.dart';
+import 'package:social_media/introduction_animation/main_screens/tutorials.dart';
 import 'settings_page.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -30,6 +33,10 @@ class _ProfilePageState extends State<ProfilePage> {
                   color: Color.fromARGB(255, 148, 60, 60),
                   fontStyle: FontStyle.italic,
                 ),
+                labelStyle: TextStyle(
+                    color: Color(0xff132137),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20),
               ),
               onChanged: (value) {
                 setState(() {
@@ -39,7 +46,13 @@ class _ProfilePageState extends State<ProfilePage> {
               enabled: isEditing,
             ),
             TextFormField(
-              decoration: InputDecoration(labelText: 'Hobby'),
+              decoration: InputDecoration(
+                labelText: 'Hobby',
+                labelStyle: TextStyle(
+                    color: Color(0xff132137),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20),
+              ),
               onChanged: (value) {
                 setState(() {
                   hobby = value;
@@ -48,7 +61,13 @@ class _ProfilePageState extends State<ProfilePage> {
               enabled: isEditing,
             ),
             TextFormField(
-              decoration: InputDecoration(labelText: 'Bio'),
+              decoration: InputDecoration(
+                labelText: 'Bio',
+                labelStyle: TextStyle(
+                    color: Color(0xff132137),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20),
+              ),
               onChanged: (value) {
                 setState(() {
                   bio = value;
@@ -77,18 +96,40 @@ class _ProfilePageState extends State<ProfilePage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: '',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: 'Settings',
           ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.people),
+            label: 'Discussions',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.more),
+            label: 'More',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.book),
+            label: 'Tutorials',
+          ),
         ],
+        unselectedItemColor:
+            Colors.blue, // Set the color for all unselected items
+        selectedItemColor: Colors.blue,
+        //selectedItemColor: Colors.black,
         onTap: (int index) {
           if (index == 0) {
             // Do nothing as it's already on the home screen
           } else if (index == 1) {
             _navigateToSettingsPage();
+          } else if (index == 2) {
+            _navigateToDiscussionsPage();
+          } else if (index == 3) {
+            _navigateToMorePage();
+          } else if (index == 4) {
+            _navigateToTutorialsPage();
           }
         },
       ),
@@ -99,6 +140,27 @@ class _ProfilePageState extends State<ProfilePage> {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => SettingsPage()),
+    );
+  }
+
+  void _navigateToMorePage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => MorePage()),
+    );
+  }
+
+  void _navigateToDiscussionsPage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => DiscussionsPage()),
+    );
+  }
+
+  void _navigateToTutorialsPage() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => TutorialsPage()),
     );
   }
 }

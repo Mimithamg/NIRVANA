@@ -3,21 +3,22 @@ import 'package:social_media/introduction_animation/main_screens/profile_page.da
 import 'bottom_navigation_bar.dart';
 
 import 'package:flutter/material.dart';
-import 'discussions.dart';
-import 'tutorials.dart';
+import 'profile_page.dart';
+import 'settings_page.dart';
 import 'more.dart';
+import 'discussions.dart';
 
-class SettingsPage extends StatelessWidget {
+class TutorialsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings'),
+        title: Text('Tutorials'),
         backgroundColor: Color(0xff132137),
       ),
       body: Center(
         child: Text(
-          'This is the Settings Page',
+          'This is the Tutorials Page',
           style: TextStyle(fontSize: 20),
         ),
       ),
@@ -51,13 +52,12 @@ class SettingsPage extends StatelessWidget {
           if (index == 0) {
             _navigateToProfilePage(context);
           } else if (index == 1) {
+            _navigateToSettingsPage(context);
           } else if (index == 2) {
             _navigateToDiscussionsPage(context);
           } else if (index == 3) {
             _navigateToMorePage(context);
-          } else if (index == 4) {
-            _navigateToTutorialsPage(context);
-          }
+          } else if (index == 4) {}
         },
       ),
     );
@@ -85,9 +85,9 @@ void _navigateToDiscussionsPage(BuildContext context) {
   );
 }
 
-void _navigateToTutorialsPage(BuildContext context) {
+void _navigateToSettingsPage(BuildContext context) {
   Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => TutorialsPage()),
+    MaterialPageRoute(builder: (context) => SettingsPage()),
   );
 }
