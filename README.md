@@ -7,6 +7,8 @@ It is a social media platform where users can connect each other based on their 
 ## what are we
 The importance of mental and physical wellness is equal. We are here to propose and put into practise an idea that can significantly contribute to obtaining good mental health in our society because the digital age makes everything simple. There are many social media platforms available today, but PIXELATE is developing a new one that will allow users to interact based on shared interests, create communities, and host discussions about issues that are important to society. People can test out additional elements like drawings and other requirements on our social app. Being indulged in a hobby can be an escape for a stressed mind, and the app was developed with a motive to promote such hobbies and activities. It helps its users find activities that they find relief in and guides them throughout, from beginner-friendly tutorials to finding themselves a community to grow their hobbies.
 
+![logo_img](https://github.com/Mimithamg/NIRVANA/assets/114565866/7e9e0212-88b9-4bc5-8956-0acf609195e0)
+
 ### Installation and requirements
 - Flutter sdk
 - Android studio sdk
@@ -19,9 +21,21 @@ The importance of mental and physical wellness is equal. We are here to propose 
 ### If you are entering to our repo
 If you wanted to run our project in your local device follow the steps
 - clone our repo in to your device 
-- open this repo in your device
+- open this project in your device
 - lauch emulator to view 
 - run the code 
+
+## Steps 
+#### To clone the project
+`git clone https://github.com/Mimithamg/NIRVANA.git`
+#### change directory to NIRVANA
+`cd NIRVANA`
+#### open it in vs code
+`code .`
+
+
+# If you encounter issues try this code snippet
+`flutter build apk --verbose`
 
 ### What we have done in our project
 - firstly we have done a ui for social media 
@@ -39,9 +53,19 @@ If you wanted to run our project in your local device follow the steps
 - firebase connected to user authentication 
 
 
-#### We are adding some snaps of our current work
+#### We are adding some snaps of our work
+
+![Screenshot_1684946227](https://github.com/Mimithamg/NIRVANA/assets/114565866/78cb6b23-9638-4765-89fb-e0cebc690225)
+![Screenshot_1684946287](https://github.com/Mimithamg/NIRVANA/assets/114565866/30ce566f-1e17-4b53-840f-007bbdf83d37)
+![Screenshot_1684946293](https://github.com/Mimithamg/NIRVANA/assets/114565866/7084643e-5b0c-4bbc-88de-e6ba7117298c)
+![Screenshot_1684946325](https://github.com/Mimithamg/NIRVANA/assets/114565866/101f8441-6f21-4451-b6c2-3972f31ca372)
+![Screenshot_1684946332](https://github.com/Mimithamg/NIRVANA/assets/114565866/8b278cbe-c694-4c78-8007-ce5e8ea953bc)
+
+### Members
+
 
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
