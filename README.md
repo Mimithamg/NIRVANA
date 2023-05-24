@@ -1,6 +1,5 @@
 # NIRVANA
 
-A new Flutter project.
 ## what is NIRVANA
 It is a social media platform where users can connect each other based on their hobbies and interests.
 
@@ -38,9 +37,11 @@ If you wanted to run our project in your local device follow the steps
 `flutter build apk --verbose`
 
 ### What we have done in our project
-- firstly we have done a ui for social media 
-- Users feel pleasure when see the opening pages because we are focusing on mental happiness and words of affirmation
+- firstly we have done a ui for social media app
+- Users feel pleasure when they see the opening pages because we are focusing on mental happiness and words of affirmation
 - Then it redirect to a sign up page and we have connected it with firebase 
+- If user do not have signed up then user can sign up with email and password
+- If user have registered then user can sign in using registered mail id and password
 - Then after sign up users redirect to a profile page where users can create their profile and after creating users can also edit their profile if needed
 - We have added menu bar at the bottom it have home(profile),settings,discussions,more,tutorials pages 
 - only discussion page ui have done
@@ -52,6 +53,15 @@ If you wanted to run our project in your local device follow the steps
 - Only flutter ui done for this 
 - firebase connected to user authentication 
 
+#### How far we are expected to go
+- profile creation is just ui and needed backend connection
+- discussion also needed backend connection
+- other 3 pages in bottom menu bar do not have ui and backend 
+
+#### Problems we have encountered
+- problem with firebase connection it took almost one day due to bugs 
+- dealing with flutter 
+- complexity of flutter
 
 #### We are adding some snaps of our work
 
@@ -62,6 +72,13 @@ If you wanted to run our project in your local device follow the steps
 ![Screenshot_1684946332](https://github.com/Mimithamg/NIRVANA/assets/114565866/8b278cbe-c694-4c78-8007-ce5e8ea953bc)
 
 ### Members
+ [Niranjana P Muraleedharan](https://github.com/Nino-niranjana)
+ 
+ [Mimitha M G](https://github.com/Mimithamg)
+ 
+ [Urmila T Anilan](https://github.com/urmila-13)
+ 
+ [Sneha Sara Elias](https://github.com/ss-elias)
 
 
 
