@@ -38,11 +38,11 @@ If you wanted to run our project in your local device follow the steps
 
 ### What we have done in our project
 - firstly we have done a ui for social media app
-- Users feel pleasure when they see the opening pages because we are focusing on mental happiness and words of affirmation
-- Then it redirect to a sign up page and we have connected it with firebase 
-- If user do not have signed up then user can sign up with email and password
+- the splash screen(opening page) contains motivational quotes to make users feel relaxed because we are focusing on mental happiness and words of affirmation
+- Then it redirects to a sign up page and we have connected it with firebase 
+- If the user have not signed up yet, then the user can sign up with email and password
 - If user have registered then user can sign in using registered mail id and password
-- Then after sign up users redirect to a profile page where users can create their profile and after creating users can also edit their profile if needed
+- Then after sign up users are redirected to a profile page where users can create their profile and after creating, users can also edit their profile if needed
 - We have added menu bar at the bottom it have home(profile),settings,discussions,more,tutorials pages 
 - only discussion page ui have done
 - In discussions page we have two options for the user 
