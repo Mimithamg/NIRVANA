@@ -107,7 +107,7 @@ class CareView extends StatelessWidget {
                 padding:
                     EdgeInsets.only(left: 64, right: 64, bottom: 16, top: 16),
                 child: Text(
-                  "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore",
+                  "Self-care is how you take your power back. — Lalah Delia",
                   textAlign: TextAlign.center,
                 ),
               ),

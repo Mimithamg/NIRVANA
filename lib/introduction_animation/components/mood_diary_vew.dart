@@ -80,7 +80,7 @@ class MoodDiaryVew extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Mood Dairy",
+                "Love Yourself",
                 style: TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold),
               ),
               SlideTransition(
@@ -91,7 +91,7 @@ class MoodDiaryVew extends StatelessWidget {
                     padding: EdgeInsets.only(
                         left: 64, right: 64, top: 16, bottom: 16),
                     child: Text(
-                      "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore",
+                      "My dark days made me strong. Or maybe I already was strong, and they made me prove it. — Emery Lord",
                       textAlign: TextAlign.center,
                     ),
                   ),

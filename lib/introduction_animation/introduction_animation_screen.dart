@@ -117,11 +117,11 @@ class _IntroductionAnimationScreenState
   }
 
   void _signUpClick(BuildContext context) {
-    // Accept the context as a parameter
+    //Accept the context as a parameter
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => LoginPage(),
+        builder: (context) => SignInScreen(),
       ),
     );
   }

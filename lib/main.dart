@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'package:firebase_core/firebase_core.dart';
+
 import 'app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -9,6 +11,7 @@ import 'package:social_media/introduction_animation/main_screens/app_routes.dart
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   await SystemChrome.setPreferredOrientations(<DeviceOrientation>[
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown

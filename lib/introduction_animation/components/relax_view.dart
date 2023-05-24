@@ -86,7 +86,7 @@ class RelaxView extends StatelessWidget {
                   padding:
                       EdgeInsets.only(left: 64, right: 64, top: 16, bottom: 16),
                   child: Text(
-                    "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore",
+                    "Your present circumstances don’t determine where you go; they merely determine where you start. — Nido Qubein",
                     textAlign: TextAlign.center,
                   ),
                 ),
