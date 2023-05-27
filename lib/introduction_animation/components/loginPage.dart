@@ -6,6 +6,7 @@ import 'package:social_media/introduction_animation/main_screens/profile_page.da
 //import 'package:firebase_signin/screens/signup_screen.dart';
 import 'package:social_media/utils/color_utils.dart';
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({Key? key}) : super(key: key);
@@ -50,17 +51,26 @@ class _SignInScreenState extends State<SignInScreen> {
                   height: 5,
                 ),
                 forgetPassword(context),
-                firebaseUIButton(context, "Sign In", () {
-                  FirebaseAuth.instance
-                      .signInWithEmailAndPassword(
-                          email: _emailTextController.text,
-                          password: _passwordTextController.text)
-                      .then((value) {
+                firebaseUIButton(context, "Sign In", () async {
+                  try {
+                    UserCredential userCredential = await FirebaseAuth.instance
+                        .signInWithEmailAndPassword(
+                            email: _emailTextController.text,
+                            password: _passwordTextController.text);
+
+                    FirebaseFirestore.instance
+                        .collection("users")
+                        .doc(userCredential.user!.email)
+                        .set({
+                      'username': _emailTextController.text.split('@')[0],
+                      'bio': 'Empty bio..'
+                    });
+
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => ProfilePage()));
-                  }).onError((error, stackTrace) {
-                    print("Error ${error.toString()}");
-                  });
+                  } catch (error) {
+                    print("Error: ${error.toString()}");
+                  }
                 }),
                 signUpOption()
               ],

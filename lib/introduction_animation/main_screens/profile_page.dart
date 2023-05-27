@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:social_media/introduction_animation/main_screens/discussions.dart';
+import 'package:social_media/introduction_animation/main_screens/drawer.dart';
 import 'package:social_media/introduction_animation/main_screens/more.dart';
 import 'package:social_media/introduction_animation/main_screens/tutorials.dart';
 import 'settings_page.dart';
+import 'profile.dart';
+import 'sign_out_page.dart';
+import 'post_picture_page.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -10,6 +14,7 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  List<String> uploadedImageUrls = [];
   String name = '';
   String hobby = '';
   String bio = '';
@@ -22,73 +27,63 @@ class _ProfilePageState extends State<ProfilePage> {
         title: Text('Profile'),
         backgroundColor: Color(0xff132137),
       ),
+      drawer: MyDrawer(
+        onProfileTap: _goToProfile,
+        onSignOut: _goToSignOut,
+      ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
           children: [
-            TextFormField(
-              decoration: InputDecoration(
-                labelText: 'Name',
-                hintStyle: TextStyle(
-                  color: Color.fromARGB(255, 148, 60, 60),
-                  fontStyle: FontStyle.italic,
+            SizedBox(
+              height: 48,
+            ),
+            Container(
+              child: Center(
+                child: Text(
+                  "Posts",
                 ),
-                labelStyle: TextStyle(
-                    color: Color(0xff132137),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20),
               ),
-              onChanged: (value) {
-                setState(() {
-                  name = value;
-                });
-              },
-              enabled: isEditing,
-            ),
-            TextFormField(
-              decoration: InputDecoration(
-                labelText: 'Hobby',
-                labelStyle: TextStyle(
-                    color: Color(0xff132137),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20),
-              ),
-              onChanged: (value) {
-                setState(() {
-                  hobby = value;
-                });
-              },
-              enabled: isEditing,
-            ),
-            TextFormField(
-              decoration: InputDecoration(
-                labelText: 'Bio',
-                labelStyle: TextStyle(
-                    color: Color(0xff132137),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20),
-              ),
-              onChanged: (value) {
-                setState(() {
-                  bio = value;
-                });
-              },
-              enabled: isEditing,
             ),
             SizedBox(
               height: 48,
             ),
-            ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  isEditing = !isEditing;
-                });
-              },
-              style: ElevatedButton.styleFrom(
-                primary: Color(0xff132137), // Set the background color here
+            Container(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => PostPicturePage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor:
+                      Colors.grey[600], // Set the desired background color
+                ),
+                child: Text('create post'),
               ),
-              child: Text(isEditing ? 'Create Profile' : 'Edit Profile'),
             ),
+            Container(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            Post(imageUrls: uploadedImageUrls)),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor:
+                      Colors.grey[600], // Set the desired background color
+                ),
+                child: Text('Your Posts'),
+              ),
+            ),
+            SizedBox(
+              height: 48,
+            ),
+            Image.asset('assets/images/posts.png'),
           ],
         ),
       ),
@@ -133,6 +128,20 @@ class _ProfilePageState extends State<ProfilePage> {
           }
         },
       ),
+    );
+  }
+
+  void _goToProfile() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Profile()),
+    );
+  }
+
+  void _goToSignOut() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SignOutPage()),
     );
   }
 

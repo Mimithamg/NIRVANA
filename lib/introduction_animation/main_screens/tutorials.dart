@@ -7,6 +7,7 @@ import 'profile_page.dart';
 import 'settings_page.dart';
 import 'more.dart';
 import 'discussions.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class TutorialsPage extends StatelessWidget {
   @override
@@ -14,13 +15,41 @@ class TutorialsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Tutorials'),
-        backgroundColor: Color(0xff132137),
+        backgroundColor: Colors.grey[600],
       ),
-      body: Center(
-        child: Text(
-          'This is the Tutorials Page',
-          style: TextStyle(fontSize: 20),
-        ),
+      body: Column(
+        children: [
+          SizedBox(
+            height: 100,
+          ),
+          Image.asset('assets/images/yt.png'),
+          SizedBox(
+            height: 50,
+          ),
+          Container(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TutorialVideosPage()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red, // Set the desired background color
+              ),
+              child: Text('YouTube Tutorials'),
+            ),
+          ),
+          Container(
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red, // Set the desired background color
+              ),
+              child: Text('  Create Tutorial  '),
+            ),
+          ),
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
@@ -90,4 +119,68 @@ void _navigateToSettingsPage(BuildContext context) {
     context,
     MaterialPageRoute(builder: (context) => SettingsPage()),
   );
+}
+
+//import 'package:flutter/material.dart';
+
+class TutorialVideosPage extends StatelessWidget {
+  // List of YouTube video IDs
+  List<String> videoIds = [
+    'GMSC95hEj2w',
+    'inpok4MKVLM',
+    //'MpOg_vwPuMQ',
+    'hM5M2Fu0RtY',
+    'aAxGTnVNJiE',
+    '8vkYJf8DOsc',
+    '5ksC0Yl348o',
+    'MSdqEhO1egc',
+    // Add more video IDs as needed
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          title: Text(
+            'Tutorial Videos',
+          ),
+          backgroundColor: Colors.grey[900]),
+      body: Scrollbar(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              ListView.builder(
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
+                itemCount: videoIds.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    margin: EdgeInsets.all(8.0),
+                    child: YoutubePlayer(
+                      controller: YoutubePlayerController(
+                        initialVideoId: videoIds[index],
+                        flags: YoutubePlayerFlags(
+                          autoPlay: false,
+                          mute: false,
+                        ),
+                      ),
+                      showVideoProgressIndicator: true,
+                      progressIndicatorColor: Colors.blueAccent,
+                      progressColors: ProgressBarColors(
+                        playedColor: Colors.blueAccent,
+                        handleColor: Colors.blueAccent,
+                      ),
+                      onReady: () {
+                        // Perform any additional operations when video is ready
+                      },
+                    ),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 }
