@@ -1,3 +1,4 @@
+
 # NIRVANA
 
 ## what is NIRVANA
@@ -93,6 +94,7 @@ If you wanted to run our project in your local device follow the steps
 
 
 #### We are adding some snaps of our work
+![Screenshot_1685198841](https://github.com/Mimithamg/NIRVANA/assets/114565866/5244f2a0-c728-45d4-abd3-70207da3cb89)
 
 ### Members
  [Niranjana P Muraleedharan](https://github.com/Nino-niranjana)
