@@ -10,6 +10,15 @@ The importance of mental and physical wellness is equal. We are here to propose 
 
 ![logo_img](https://github.com/Mimithamg/NIRVANA/assets/114565866/7e9e0212-88b9-4bc5-8956-0acf609195e0)
 
+## Project overview
+Social medias we are using today have normal things it won't help mental health
+
+So we PIXELATE introducing an app where users can connect based on similar hobbies and interests 
+
+We have done an app where users can create account by signing up and we have done firebase authentication for this and user can post pictures and can start a discussion in their own selected topic and can view mental health improving tutorials 
+
+We have done firebase authentication for sign in and firebase firestore database for storing user profile and firebase storage for storing posts that user create and also the entire project done in flutter framework
+
 ### Installation and requirements
 - Flutter sdk
 - Android studio sdk
@@ -36,6 +45,8 @@ If you wanted to run our project in your local device follow the steps
 
 
 # If you encounter issues try this code snippet
+`flutter clean`
+
 `flutter build apk --verbose`
 
 # First Phase Submission
@@ -72,7 +83,6 @@ If you wanted to run our project in your local device follow the steps
 ![Screenshot_1684946227](https://github.com/Mimithamg/NIRVANA/assets/114565866/78cb6b23-9638-4765-89fb-e0cebc690225)
 ![Screenshot_1684946287](https://github.com/Mimithamg/NIRVANA/assets/114565866/30ce566f-1e17-4b53-840f-007bbdf83d37)
 ![Screenshot_1684946293](https://github.com/Mimithamg/NIRVANA/assets/114565866/7084643e-5b0c-4bbc-88de-e6ba7117298c)
-![Screenshot_1684946325](https://github.com/Mimithamg/NIRVANA/assets/114565866/101f8441-6f21-4451-b6c2-3972f31ca372)
 ![Screenshot_1684946332](https://github.com/Mimithamg/NIRVANA/assets/114565866/8b278cbe-c694-4c78-8007-ce5e8ea953bc)
 
 # Second Phase Submission
