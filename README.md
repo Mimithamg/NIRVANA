@@ -95,8 +95,17 @@ If you wanted to run our project in your local device follow the steps
 
 
 #### We are adding some snaps of our work
-![Screenshot_1685198841](https://github.com/Mimithamg/NIRVANA/assets/114565866/5244f2a0-c728-45d4-abd3-70207da3cb89)
+
 ![Screenshot_1685198841](https://github.com/Mimithamg/NIRVANA/assets/114565866/6efc3008-72c9-4169-8aba-167e32e61f42)
+![Screenshot_1685198852](https://github.com/Mimithamg/NIRVANA/assets/114565866/71ac506e-fa57-4088-9135-11297e7185f3)
+![Screenshot_1685198873](https://github.com/Mimithamg/NIRVANA/assets/114565866/4cd891f6-d53e-4092-ad3f-d52bce2c60a2)
+![Screenshot_1685198894 - Copy](https://github.com/Mimithamg/NIRVANA/assets/114565866/0b5a8253-851c-4610-b329-e043dc6c79b7)
+![Screenshot_1685198912 - Copy](https://github.com/Mimithamg/NIRVANA/assets/114565866/4e17cd26-5384-4eb4-863b-e948417d55cf)
+![Screenshot_1685198921 - Copy](https://github.com/Mimithamg/NIRVANA/assets/114565866/a3165f5e-0ae5-4821-8751-1ea349d42557)
+![Screenshot_1685198926 - Copy](https://github.com/Mimithamg/NIRVANA/assets/114565866/483780b5-9848-4181-aa41-29e5a378354a)
+![Screenshot_1685198929](https://github.com/Mimithamg/NIRVANA/assets/114565866/cb9684f2-a700-49ce-9656-f6fe0664d37b)
+![Screenshot_1685198947](https://github.com/Mimithamg/NIRVANA/assets/114565866/9c6b36e3-2572-484e-8166-767c2546dd39)
+
 
 ### Members
  [Niranjana P Muraleedharan](https://github.com/Nino-niranjana)
