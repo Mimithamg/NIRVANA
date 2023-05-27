@@ -6,16 +6,16 @@
 It is a social media platform where users can connect each other based on their hobbies and interests.
 
 ## what are we
-The importance of mental and physical wellness is equal. We are here to propose and put into practise an idea that can significantly contribute to obtaining good mental health in our society because the digital age makes everything simple. There are many social media platforms available today, but PIXELATE is developing a new one that will allow users to interact based on shared interests, create communities, and host discussions about issues that are important to society. People can test out additional elements like drawings and other requirements on our social app. Being indulged in a hobby can be an escape for a stressed mind, and the app was developed with a motive to promote such hobbies and activities. It helps its users find activities that they find relief in and guides them throughout, from beginner-friendly tutorials to finding themselves a community to grow their hobbies.
+The importance of mental and physical wellness is equal. We are here to propose and put into practise an idea that can significantly contribute to obtaining good mental health in our society because the digital age makes everything simple.  There are many social media platforms available today, but PIXELATE is developing a new one that will allow users to interact based on shared interests, create communities, and host discussions about issues that are important to society.Being indulged in a hobby can be an escape for a stressed mind, and the app was developed with a motive to promote such hobbies and activities. People can test out additional elements like drawings and other requirements on our social app. It helps its users find activities that they find relief in and guides them throughout, from beginner-friendly tutorials to finding themselves a community to grow their hobbies.
 
 ![logo_img](https://github.com/Mimithamg/NIRVANA/assets/114565866/7e9e0212-88b9-4bc5-8956-0acf609195e0)
 
 ## Project overview
-Social medias we are using today have normal things it won't help mental health
+Social medias we are using today have normal things that won't help mental health
 
 So we PIXELATE introducing an app where users can connect based on similar hobbies and interests 
 
-We have done an app where users can create account by signing up and we have done firebase authentication for this and user can post pictures and can start a discussion in their own selected topic and can view mental health improving tutorials 
+We have done an app where users can create account by signing up and we have done firebase authentication for this and user can post pictures and can start a discussion in their own selected topic and can view mental health improving tutorials or create their own tutorials to help others.
 
 We have done firebase authentication for sign in and firebase firestore database for storing user profile and firebase storage for storing posts that user create and also the entire project done in flutter framework
 
@@ -100,8 +100,8 @@ If you wanted to run our project in your local device follow the steps
 - Discussions page is the same 
 - In more page we have done ui to invite your friends
 - In tutorials page user can see two buttons one is to view youtube tutorials and next one to create tutorials
-- By selecting youtube tutorials user will be redirected to a page where user can find a lot of tutorials which are helpful for the user to calm their mind by watching their favorite hobbies and theraputic meditational videos
-- User can watch those videos by simply pressing them
+- By selecting youtube tutorials user will be redirected to a page where user can find a lot of tutorials which are helpful for the user to calm their mind by watching their favorite hobbies and therapeutic meditational videos
+- User can watch those videos by simply clicking on them
 
 
 #### We are adding some snaps of our work
